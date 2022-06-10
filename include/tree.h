@@ -50,5 +50,18 @@ class Tree {
   explicit Tree(std::vector<char> array) {
     makeStructureTree(array);
   }
+  std::vector<char> getCombinationsByNumber(Tree tree, int number) {
+    if (number > combinations.size()) {
+      return {};
+    }
+    std::vector<char> result;
+    Node current = combinations[number-1];
+    while (current.parent) {
+      result.push_back(current.symb);
+      current = *current.parent;
+    }
+    std::reverse(result.begin(), result.end());
+    return result;
+  }
 };
 #endif  // INCLUDE_TREE_H_
