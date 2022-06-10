@@ -5,7 +5,7 @@
 #include  <cstdlib>
 #include  "tree.h"
 
-std::vector<char> getCombinationsByNumber(Tree tree, int number){
+std::vector<char> getCombinationsByNumber(Tree tree, int number) {
   if (number > combinations.size()) {
     return {};
   }
