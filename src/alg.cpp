@@ -3,7 +3,7 @@
 #include  <fstream>
 #include  <locale>
 #include  <cstdlib>
-#include  "tree.h"В
+#include  "tree.h"
 
 std::vector<char> getPerm(const Tree& tree, int n) {
   return Tree(tree).getCombinationsByNumber(tree, n);
