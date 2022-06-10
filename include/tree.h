@@ -5,7 +5,6 @@
 #include <vector>
 #include <string>
 
-
 struct Node {
   char symb;
   Node *parent;
@@ -44,7 +43,7 @@ class Tree {
     array.end(), value);
     if (position != array.end())
       array.erase(position);
-      return array;
+    return array;
   }
 
  public:
